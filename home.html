@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - SAVE Lab</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+        <div class="container">
+            <a class="navbar-brand" href="home.html">SAVE Lab</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="research.html">Research</a></li>
+                    <li class="nav-item"><a class="nav-link" href="people.html">People</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Background Image -->
+    <header class="hero-section text-center">
+        <div class="hero-content">
+            <h1>Welcome to the SAVE Lab</h1>
+            <p class="lead">San Antonio Virtual Environments Lab - Pioneering research in immersive and interactive
+                technologies.</p>
+            <a href="research.html" class="btn btn-primary btn-lg mt-4">Explore Research</a>
+        </div>
+    </header>
+
+    <!-- Mission and Vision Section -->
+    <section class="container py-5">
+        <div class="row">
+            <!-- Mission -->
+            <div class="col-md-6">
+                <h2>Our Mission</h2>
+                <p>The SAVE Lab is dedicated to advancing research in immersive technologies and exploring the new
+                    frontiers of virtual environments and human-computer interaction.</p>
+            </div>
+            <!-- Vision -->
+            <div class="col-md-6">
+                <h2>Our Vision</h2>
+                <p>To become a global leader in virtual and augmented reality research, transforming the way people
+                    interact with technology and enhancing applications in education, healthcare, and beyond.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Research Focus Section -->
+
+    <section class="container py-5 research-focus">
+        <h2 class="text-center mb-4">Research Focus</h2>
+        <p class="text-center">The San Antonio Virtual Environments (SAVE) Lab conducts cutting-edge research across
+            various immersive and interactive technologies. Our work spans multiple domains, contributing to
+            advancements in training, education, and healthcare.</p>
+        <div class="row mt-4">
+            <div class="col-md-6 text-center mb-4">
+                <h4>Virtual Reality (VR) & Augmented Reality (AR)</h4>
+                <p>Exploring fully immersive VR and AR applications, enhancing user experiences and developing new ways
+                    of interacting with digital content.</p>
+            </div>
+            <div class="col-md-6 text-center mb-4">
+                <h4>Mixed Reality (MR) & Simulation</h4>
+                <p>Integrating real-world and virtual elements to create hybrid environments and simulations that
+                    support realistic training scenarios.</p>
+            </div>
+            <div class="col-md-6 text-center mb-4">
+                <h4>3D User Interfaces & Serious Games</h4>
+                <p>Developing interactive 3D interfaces and serious games that educate, train, and engage users in
+                    meaningful ways.</p>
+            </div>
+            <div class="col-md-6 text-center mb-4">
+                <h4>Artificial Intelligence (AI) & Deep Learning</h4>
+                <p>Utilizing AI and deep learning to analyze complex data, predict outcomes, and create adaptive,
+                    responsive virtual environments.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Overview Section -->
+
+    <section class="container text-center mt-5">
+        <h2>Explore Our Lab</h2>
+        <p>Learn more about our research, team, and facilities.</p>
+        <a href="research.html" class="btn btn-outline-primary m-2">Our Research</a>
+        <a href="people.html" class="btn btn-outline-primary m-2">Our Team</a>
+        <a href="contact.html" class="btn btn-outline-primary m-2">Contact Us</a>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="container py-5">
+        <h2 class="text-center mb-4">Gallery</h2>
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="images/1.jpeg" alt="Gallery Image 1">
+            </div>
+            <div class="gallery-item">
+                <img src="images/2.jpg" alt="Gallery Image 2">
+            </div>
+            <div class="gallery-item">
+                <img src="images/3.png" alt="Gallery Image 3">
+            </div>
+            <div class="gallery-item">
+                <img src="images/4.png" alt="Gallery Image 4">
+            </div>
+            <div class="gallery-item">
+                <img src="images/5.png" alt="Gallery Image 5">
+            </div>
+            <div class="gallery-item">
+                <img src="images/6.jpeg" alt="Gallery Image 6">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer text-center py-3">
+        <p>&copy; 2024 SAVE Lab. All rights reserved.</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        window.addEventListener('scroll', function () {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {  // Adjust scroll threshold as needed
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+    </script>
+
+</body>
+
+</html>
